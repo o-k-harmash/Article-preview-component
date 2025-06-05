@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 🌐 Иконка сайта -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <!-- 📄 Сброс и основные стили -->
+  <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./css/base/index.css" />
+  <link rel="stylesheet" href="./css/layouts/index.css" />
+  <link rel="stylesheet" href="./css/modules/card.css" />
+  <link rel="stylesheet" href="./css/states/card.css" />
+  <link rel="stylesheet" href="./css/themes/default.css" />
+
+  <!-- 🔠 Подключение шрифта Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- 📎 Дополнительные стили (можно убрать) -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <!-- 🖼️ Обложка статьи -->
+      <div class="card__image-wrapper">
+        <img class="card__image" src="./images/drawers.jpg" alt="drawers article preview image" />
+      </div>
+
+      <main class="card__content">
+        <!-- 📝 Заголовок и текст статьи -->
+        <h1 class="card__title">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your home
+        </h1>
+        <p class="card__description">
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+          I’ve got some simple tips to help you make any room feel complete.
+        </p>
+
+        <!-- 👣 Футер карточки -->
+        <div id="card-footer" class="card__footer" data-share="false">
+          <!-- 👤 Автор статьи -->
+          <div class="card__author">
+            <div class="card__author-photo-wrapper">
+              <img class="card__author-photo" src="./images/avatar-michelle.jpg"
+                alt="Michelle, author of this article" />
+            </div>
+            <div class="card__author-info">
+              <span class="card__author-name">Michelle Appleton</span>
+              <time class="card__date" datetime="2020-06-28">28 Jun 2020</time>
+            </div>
+          </div>
+
+          <!-- 🔗 Соцсети в футере (мобильный вид) -->
+          <div class="card__socials-inline">
+            <div class="card__socials">
+              <span class="card__socials-label">Share</span>
+              <a href=""><img src="./images/icon-facebook.svg" alt="Facebook" /></a>
+              <a href=""><img src="./images/icon-pinterest.svg" alt="Pinterest" /></a>
+              <a href=""><img src="./images/icon-twitter.svg" alt="Twitter" /></a>
+            </div>
+          </div>
+
+          <!-- 📤 Кнопка и тултип (десктоп вид) -->
+          <div class="card__share">
+            <div id="share-toggle-button" class="card__share-button">
+              <div class="card__share-icon-wrapper">
+                <img class="card__share-icon" src="./images/icon-share.svg" alt="Share article" />
+              </div>
+            </div>
+
+            <!-- 💬 Тултип с соцсетями -->
+            <div id="card-share-tooltip" class="card__socials-tooltip" role="tooltip">
+              <div class="card__socials">
+                <span class="card__socials-label">Share</span>
+                <a href=""><img src="./images/icon-facebook.svg" alt="Facebook" /></a>
+                <a href=""><img src="./images/icon-pinterest.svg" alt="Pinterest" /></a>
+                <a href=""><img src="./images/icon-twitter.svg" alt="Twitter" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- 🧠 Скрипт логики -->
+  <script src="./index.js"></script>
+
+  <!-- 🔗 Attribution (по желанию включить) -->
+  <!-- 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> 
+  -->
+</body>
+
+</html>

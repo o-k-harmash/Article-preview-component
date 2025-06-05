@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    block-size: 100vh;
+    font-family: var(--font-family-manrope);
+    font-weight: var(--font-weight-500);
+    font-size: clamp(0.575rem, var(--font-size-13) + 0.05vw, 0.875rem);
+    color: var(--grayish-blue);
+}
+
+img {
+    inline-size: 100%;
+    block-size: 100%;
+}

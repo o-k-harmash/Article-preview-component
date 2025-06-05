@@ -1,0 +1,21 @@
+:root {
+    --vw-coef: 0.7vw;
+
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-size-13: 0.8125rem;
+
+    --font-family-manrope: "Manrope";
+
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-500: 700;
+
+    --padding-md: 1.5rem;
+
+    --border-circle: 999rem;
+}
